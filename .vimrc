@@ -1,3 +1,3 @@
 filetype on
-sytax on
-colorscheme vim-material
+syntax on
+colorscheme Tomorrow-Night
