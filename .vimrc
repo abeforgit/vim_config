@@ -1,3 +1,16 @@
+"plugins
+call plug#begin()
+Plug 'scrooloose/nerdcommenter'
+Plug 'itchyny/lightline.vim'
+
+call plug#end()
+"lightline configs
+set laststatus=2
+set noshowmode
+if !has('gui_running')
+    set t_Co=256
+endif
+
 syntax on
 set number
 colorscheme Tomorrow-Night
@@ -22,8 +35,4 @@ nnoremap <Leader>n :nohlsearch<Bar>:echo<CR>
 "custom mappings
 nnoremap <Leader><Leader> :e#<CR>
 
-"plugins
-call plug#begin()
-Plug 'scrooloose/nerdcommenter'
 
-call plug#end()
