@@ -36,3 +36,8 @@ nnoremap <Leader>n :nohlsearch<Bar>:echo<CR>
 nnoremap <Leader><Leader> :e#<CR>
 
 
+"plugins
+call plug#begin()
+Plug 'scrooloose/nerdcommenter'
+Plug 'itchyny/lightline.vim'
+call plug#end()
