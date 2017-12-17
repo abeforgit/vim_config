@@ -17,8 +17,13 @@ set shiftwidth=4
 set expandtab
 "search options
 set hlsearch
-nnoremap <silent> <Esc> :nohlsearch<Bar>:echo<CR>
+nnoremap <Leader>n :nohlsearch<Bar>:echo<CR>
 
 "custom mappings
 nnoremap <Leader><Leader> :e#<CR>
 
+"plugins
+call plug#begin()
+Plug 'scrooloose/nerdcommenter'
+
+call plug#end()
