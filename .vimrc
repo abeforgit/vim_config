@@ -29,6 +29,8 @@ call plug#begin()
 Plug 'scrooloose/nerdcommenter'
 Plug 'itchyny/lightline.vim'
 Plug 'WolfgangMehner/bash-support'
+Plug 'ervandew/supertab'
+Plug 'easymotion/vim-easymotion'
 call plug#end()
 "lightline configs
 set laststatus=2
@@ -37,3 +39,5 @@ if !has('gui_running')
     set t_Co=256
 endif
 "bash-support configs
+let g:BASH_InsertFileHeader = 'no'
+let g:BASH_AlsoBash = [ '*.cgi' ]
