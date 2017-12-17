@@ -1,16 +1,4 @@
-"plugins
-call plug#begin()
-Plug 'scrooloose/nerdcommenter'
-Plug 'itchyny/lightline.vim'
-
-call plug#end()
-"lightline configs
-set laststatus=2
-set noshowmode
-if !has('gui_running')
-    set t_Co=256
-endif
-
+set nocompatible
 syntax on
 set number
 colorscheme Tomorrow-Night
@@ -40,4 +28,12 @@ nnoremap <Leader><Leader> :e#<CR>
 call plug#begin()
 Plug 'scrooloose/nerdcommenter'
 Plug 'itchyny/lightline.vim'
+Plug 'WolfgangMehner/bash-support'
 call plug#end()
+"lightline configs
+set laststatus=2
+set noshowmode
+if !has('gui_running')
+    set t_Co=256
+endif
+"bash-support configs
