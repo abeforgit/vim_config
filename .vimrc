@@ -1,7 +1,8 @@
 set nocompatible
 syntax on
 set number
-colorscheme Tomorrow-Night
+colorscheme hybrid
+set background=dark
 let mapleader=" "
 
 set hidden
